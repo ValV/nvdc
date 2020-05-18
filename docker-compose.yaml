@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+    tensorflow:
+        build:
+            context: "."
+            dockerfile: "Dockerfile"
+        container_name: "nvtf2p3"
+        image: "valv/nvtf2p3"
+        shm_size: "4gb"
+        stdin_open: True
+        tty: True
+        volumes:
+            - "/var/tmp/notebooks:/workspace/notebooks"
+        ports:
+            - "80:80"
+        restart: "always"
+# vim: se et sw=4 sts=4 syntax=yaml:
