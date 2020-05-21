@@ -7,7 +7,7 @@ services:
             dockerfile: "Dockerfile"
         container_name: "nvtf2p3"
         image: "valv/nvtf2p3"
-        shm_size: "4gb"
+        shm_size: "12gb"
         stdin_open: True
         tty: True
         volumes:
